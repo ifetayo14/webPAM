@@ -25,7 +25,7 @@
                     <li><a href="{{ url('/dataPeserta') }}">Peserta</a></li>
                 </ul>
             </li>
-            <li><a href="#">Data Quiz</a></li>
+            <li><a href="{{ url('/quiz') }}">Data Quiz</a></li>
             <li><a href="#">Data Soal</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">

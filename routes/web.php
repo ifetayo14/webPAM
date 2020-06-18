@@ -13,6 +13,17 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/quiz','QuizController@index');
+Route::get('/quiz/create','QuizController@create');
+// Route::get('/result/create','ResultController@create');
+Route::post('/quiz','QuizController@store');
+Route::get('/editQuiz/{id}','QuizController@edit');
+Route::delete('/deleteQuiz/{id}','QuizController@destroy');
+Route::patch('/updateQuiz/{id}', 'QuizController@update');
+
+// Route::get('/', function () {
+//     return view('quiz');
+// });
 Route::get('/', function () {
     return view('index');
 });
