@@ -57,8 +57,14 @@
     }
 </style>
 @section('main-content')
+    @if($message = Session::get('success'))
+        <div class="alert alert-success">
+            <p>
+                {{$message}}
+            </p>
+        </div>
+    @endif
     <div class="flex-center position-ref full-height">
-
         <div class="content">
             <div class="title m-b-md">
                 Laravel

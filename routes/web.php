@@ -36,5 +36,8 @@ Route::get('/editPeserta/{peserta}', 'PesertaController@edit');
 Route::patch('/updatePeserta/{peserta}', 'PesertaController@update');
 Route::delete('/dataPeserta/{peserta}', 'PesertaController@destroy');
 
+Route::get('/addAdministrator', 'AdminController@create');
+Route::post('/addNewAdministrator', 'AdminController@store');
+
 Route::post('/loginValidation', 'AuthController@login');
 Route::get('/logout', 'AuthController@logout');

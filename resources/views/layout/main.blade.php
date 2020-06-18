@@ -21,7 +21,7 @@
                 <a class="dropdown-toggle" data-toggle="dropdown" href="#">Data User
                     <span class="caret"></span></a>
                 <ul class="dropdown-menu">
-                    <li><a href="#">Administrator</a></li>
+                    <li><a href="{{ url('/addAdministrator') }}">Tambah Administrator</a></li>
                     <li><a href="{{ url('/dataPeserta') }}">Peserta</a></li>
                 </ul>
             </li>
