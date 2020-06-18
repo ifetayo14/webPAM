@@ -17,7 +17,7 @@ class AuthController extends Controller
                 $request->session()->put('username', $data->username);
                 $request->session()->put('role', $data->role);
 
-                return redirect('/welcome');
+                return redirect('/dashboard');
             }
             elseif ($data->role=="peserta") {
                 $request->session()->put('username', $data->username);

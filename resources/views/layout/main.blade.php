@@ -13,13 +13,20 @@
 <nav class="navbar navbar-default">
     <div class="container-fluid">
         <div class="navbar-header">
-            <a class="navbar-brand" href="#">QUIZ ADMINISTRATOR</a>
+            <a class="navbar-brand" href="{{ url('/dashboard') }}">QUIZ ADMINISTRATOR</a>
         </div>
         <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#">Page 1</a></li>
-            <li><a href="#">Page 2</a></li>
-            <li><a href="#">Page 3</a></li>
+            <li><a href="{{ url('/dashboard') }}">Beranda</a></li>
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Data User
+                    <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Administrator</a></li>
+                    <li><a href="{{ url('/dataPeserta') }}">Peserta</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Data Quiz</a></li>
+            <li><a href="#">Data Soal</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
             <li><a href="{{ url('logout') }}">Logout</a></li>
