@@ -13,6 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/dataSoal', 'QuestionController@index');
+Route::get('/addQuestion', 'QuestionController@create');
+Route::post('/addNewQuestion', 'QuestionController@store');
+Route::delete('/deleteSoal/{question_id}','QuestionController@destroy');
+
 Route::get('/quiz','QuizController@index');
 Route::get('/quiz/create','QuizController@create');
 // Route::get('/result/create','ResultController@create');

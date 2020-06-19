@@ -26,7 +26,7 @@
                 </ul>
             </li>
             <li><a href="{{ url('/quiz') }}">Data Quiz</a></li>
-            <li><a href="#">Data Soal</a></li>
+            <li><a href="{{ url('/dataSoal') }}">Data Soal</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
             <li><a href="{{ url('logout') }}">Logout</a></li>
